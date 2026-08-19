@@ -64,7 +64,7 @@ export default function SelfHostSection() {
           </div>
 
           {/* Rows */}
-          {rows.map((row, i) => (
+          {rows.map((row) => (
             <div
               key={row.label}
               className={`
