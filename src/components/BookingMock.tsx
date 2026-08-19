@@ -69,7 +69,7 @@ export default function BookingMock() {
           {dates.map((week, wi) => (
             <div key={wi} className="grid grid-cols-7">
               {week.map((date, di) => {
-                const isCurrentMonth = wi === 0 ? di >= 4 : wi < 4 ? true : di < 6
+                const isCurrentMonth = wi === 0 ? di >= 4 : wi < 4 ? true : di <= 6
                 const isToday = date === 19 && wi === 2
                 const isSelected = date === 20 && wi === 2
                 return (
