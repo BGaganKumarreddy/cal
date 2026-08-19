@@ -50,7 +50,7 @@ export default function Hero() {
       <div
         ref={heroRef}
         className="relative w-full rounded-3xl overflow-hidden bg-[#FAFAFA] border border-white shadow-[0_20px_80px_-20px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,1)]"
-        style={{ height: 'calc(100vh - 108px)' }}
+        style={{ minHeight: 'calc(100vh - 108px)' }}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
       >
@@ -123,14 +123,14 @@ export default function Hero() {
 
               {/* Right: booking mock — 3D Parallax Tilt with Marble sheen */}
               <div
-                className="hidden md:block relative"
+                className="w-full relative flex justify-center md:justify-end mt-8 md:mt-0"
                 style={{ perspective: '1000px' }}
               >
                 {/* Ethereal Glow behind the card */}
                 <div className="absolute -inset-16 hero-glow pointer-events-none opacity-80" />
 
                 {/* Outer: entrance animation */}
-                <div className="animate-hero-card">
+                <div className="animate-hero-card w-full max-w-[420px] md:max-w-none">
                   {/* Inner: 3D parallax tilt */}
                   <div
                     ref={cardRef}

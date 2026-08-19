@@ -13,7 +13,7 @@ const timeSlots = ['9:00 AM', '10:00 AM', '11:00 AM', '1:00 PM', '2:00 PM', '3:0
 
 export default function BookingMock() {
   return (
-    <div className="w-[420px] lg:w-[460px] bg-white/95 backdrop-blur-2xl rounded-3xl border border-white/90 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,1)] overflow-hidden">
+    <div className="w-full max-w-[420px] lg:max-w-none lg:w-[460px] mx-auto md:mx-0 bg-white/95 backdrop-blur-2xl rounded-3xl border border-white/90 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,1)] overflow-hidden">
       {/* ── Header ───────────────────────────────── */}
       <div className="px-5 pt-5 pb-4 border-b border-black/[0.05] bg-gradient-to-b from-white to-gray-50/50">
         <div className="flex items-center gap-3 mb-2.5">
