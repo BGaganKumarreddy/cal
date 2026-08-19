@@ -123,7 +123,7 @@ export default function Hero() {
 
               {/* Right: booking mock — 3D Parallax Tilt with Marble sheen */}
               <div
-                className="w-full relative flex justify-center md:justify-end mt-8 md:mt-0"
+                className="w-full md:w-auto relative flex justify-center md:justify-end mt-8 md:mt-0"
                 style={{ perspective: '1000px' }}
               >
                 {/* Ethereal Glow behind the card */}
